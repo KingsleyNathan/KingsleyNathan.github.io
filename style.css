@@ -1,8 +1,6 @@
 :root {
-  --bg-1: #0b0b0d;
   --bg-2: #0f0f13;
   --card: rgba(255,255,255,0.03);
-  --glass: rgba(255,255,255,0.04);
   --glow: #8b5cf6;
   --accent: #00d4ff;
   --muted: #bfc3d2;
@@ -514,14 +512,6 @@ section {
   flex-wrap: wrap;
 }
 
-.chip {
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));
-  border: 1px solid rgba(139,92,246,0.05);
-  color: var(--muted);
-  font-weight: 600;
-}
 
 /* ✨ Skill chip hover effect — zoom + color glow */
 .chip {
@@ -825,4 +815,4 @@ section {
   .navlist {
     flex-direction: row;
   }
-}
+}  
