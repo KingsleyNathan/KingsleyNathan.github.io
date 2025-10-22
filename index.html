@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-
 </head>
 <body>
   <div class="container">
@@ -19,12 +18,9 @@
 <header>
   <div class="nav-wrap">
     <div class="logo">P<span>ulan</span></div>
-
-    <!-- Hamburger Button -->
     <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
       <i class='bx bx-menu'></i>
     </button>
-
     <nav id="navbar">
       <div class="navlist">
         <a href="#about">About</a>
@@ -37,42 +33,34 @@
   </div>
 </header>
 
+<!-- HERO -->
+<main id="about" class="hero">
+  <div class="intro reveal">
+    <div class="kicker">Software Manual Tester</div>
+    <h1>Hi, I'm <span>Nathaniel Pulan</span></h1>
+    <p class="lead">An aspiring QA Engineer focused on delivering reliable, high-quality software through detailed manual testing and continuous learning. Currently honing my skills in test design and defect reporting while preparing to dive into automation.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#projects"><i class='bx bx-folder-open'></i> Projects</a>
+      <a class="btn" href="https://www.linkedin.com/in/nathaniel-kingsley-pulan-349322298/" target="_blank"><i class='bx bxl-linkedin-square'></i> LinkedIn</a>
+    </div>
+  </div>
 
-    <!-- HERO / HOME -->
-    <main id="about" class="hero">
-      <div class="intro reveal">
-        <div class="kicker">Software Manual Tester</div>
-        <h1>Hi, I'm <span>Nathaniel Pulan</span></h1>
-        <p class="lead">An aspiring QA Engineer focused on delivering reliable, high-quality software through detailed manual testing and continuous learning. Currently honing my skills in test design and defect reporting while preparing to dive into automation.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects">
-            <i class='bx bx-folder-open'></i> Projects
-          </a>
-          <a class="btn" href="https://www.linkedin.com/in/nathaniel-kingsley-pulan-349322298/" target="_blank">
-            <i class='bx bxl-linkedin-square'></i> LinkedIn
-          </a>
-
-        </div>
-      </div>
-
-      <aside class="profile reveal">
-        <div class="avatar">
-          <!-- keep original image path if available -->
-          <img src="img/king.jpg" alt="Nathaniel">
-        </div>
-        <div class="meta">
-          <div style="font-weight:800;font-size:16px">Nathaniel Pulan</div>
-          <div class="muted">Computer Engineer</div>
-          <div class="muted">Polytechnic University of the Philippines</div>
-          <div class="muted">kingsleypulan54@gmail.com</div>
-        </div>
-        <div style="width:100%;margin-top:12px;display:flex;gap:8px;justify-content:center">
-          <a class="icon-btn"href="files/resume-pulan.pdf" target="_blank"><i class='bx bx-file'></i> Resume</a>
-          <a class="icon-btn" href="#contact"><i class='bx bx-mail-send'></i> Message</a>
-        </div>
-      </aside>
-
-    </main>
+  <aside class="profile reveal">
+    <div class="avatar">
+      <img src="img/king.jpg" alt="Nathaniel">
+    </div>
+    <div class="meta">
+      <div style="font-weight:800;font-size:16px">Nathaniel Pulan</div>
+      <div class="muted">Computer Engineer</div>
+      <div class="muted">Polytechnic University of the Philippines</div>
+      <div class="muted">kingsleypulan54@gmail.com</div>
+    </div>
+    <div style="width:100%;margin-top:12px;display:flex;gap:8px;justify-content:center">
+      <a class="icon-btn" href="files/resume-pulan.pdf" target="_blank"><i class='bx bx-file'></i> Resume</a>
+      <a class="icon-btn" href="#contact"><i class='bx bx-mail-send'></i> Message</a>
+    </div>
+  </aside>
+</main>
 
 <!-- EXPERIENCE -->
 <section id="experience" class="reveal">
@@ -82,163 +70,176 @@
   </div>
 
   <div style="display:grid;gap:18px">
-    
-    <!-- Experience 1 -->
-    <div style="background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.05)">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-        <h3 style="margin:0;">Manual QA Tester — Yenprovement</h3>
-        <div class="muted" style="white-space:nowrap;">October 2025</div>
-      </div>
-        <ul style="margin-top:10px; color:var(--muted); padding-left:20px;">
-        <li>Performed exploratory, functional, and regression testing on a live staging site (Bug Mart) to identify and document defects.</li>
-        <li>Created and maintained QA documentation including Test Plans, Test Cases, RTM, Bug Reports, and Test Closure Reports.</li>
-        <li>Collaborated using Trello and spreadsheets to track defects, report results, and ensure testing quality and completeness.</li>
+    <div style="background:var(--card);padding:18px;border-radius:12px;">
+      <h3>Manual QA Tester — Yenprovement</h3>
+      <ul style="margin-top:10px;color:var(--muted);padding-left:20px;">
+        <li>Performed exploratory, functional, and regression testing on a live staging site (Bug Mart).</li>
+        <li>Created QA documentation including Test Plans, Test Cases, and Bug Reports.</li>
+        <li>Collaborated using Trello and spreadsheets to ensure testing quality.</li>
       </ul>
     </div>
 
-    <!-- Experience 2 -->
-    <div style="background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.05)">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-        <h3 style="margin:0;">Automation Intern — OptoGrow</h3>
-        <div class="muted" style="white-space:nowrap;">Aug – Sept 2024</div>
-      </div>
-        <ul style="margin-top:10px; color:var(--muted); padding-left:20px;">
-        <li>Assisted in creating and quality-checking automation workflows and pipelines using GoHighLevel.</li>
-        <li>Manually reviewed and refined web designs and documents to ensure accuracy and consistency.</li>
-        <li>Implemented and tested automated solutions to streamline repetitive business tasks.</li>
+    <div style="background:var(--card);padding:18px;border-radius:12px;">
+      <h3>Automation Intern — OptoGrow</h3>
+      <ul style="margin-top:10px;color:var(--muted);padding-left:20px;">
+        <li>Assisted in creating and checking automation workflows using GoHighLevel.</li>
+        <li>Reviewed web designs and documents for consistency.</li>
+        <li>Tested automated solutions to streamline repetitive tasks.</li>
       </ul>
     </div>
 
-    <!-- Experience 3 -->
-    <div style="background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.05)">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-        <h3 style="margin:0;">Full-Stack Developer — ROC.PH</h3>
-        <div class="muted" style="white-space:nowrap;">Aug – Oct 2023</div>
-      </div>
-      <ul style="margin-top:10px; color:var(--muted); padding-left:20px;">
-        <li>Developed a web extension for the ROC.PH site to manage OJT intern and adviser registrations.</li>
-        <li>Integrated front-end (Bootstrap) and back-end (PHP, SQL) functionalities for seamless data handling.</li>
-        <li>Implemented a secure and responsive system for account registration and management.</li>
+    <div style="background:var(--card);padding:18px;border-radius:12px;">
+      <h3>Full-Stack Developer — ROC.PH</h3>
+      <ul style="margin-top:10px;color:var(--muted);padding-left:20px;">
+        <li>Developed a web extension for ROC.PH to manage OJT intern and adviser registrations.</li>
+        <li>Integrated front-end and back-end functionalities.</li>
+        <li>Implemented secure and responsive account management systems.</li>
       </ul>
     </div>
-
-
   </div>
 </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="reveal" style="margin-bottom:18px">
-      <div class="section-head">
-        <h2>Projects</h2>
-        <p class="muted">Selected work — click to view demo or repo</p>
-      </div>
-
-      <div class="projects-grid">
-
-<!-- Project: BuggyMart QA Testing -->
-<article class="project-card neon-outline">
-  <div class="project-media">
-    <img src="img/bugmart.png" alt="BuggyMart QA Project">
+<!-- PROJECTS -->
+<section id="projects" class="reveal" style="margin-bottom:18px">
+  <div class="section-head">
+    <h2>Projects</h2>
+    <p class="muted">Academic & Personal Projects</p>
   </div>
-  <div class="project-body">
-    <div class="project-title" style="margin-bottom: 25px;">
-      <h3>Manual Testing</h3>
-      <div class="muted">Oct 2025</div>
-    </div>
-    <p class="muted" style="margin-top:8px">
-      Applied QA fundamentals across the full testing lifecycle, created test cases, RTM, bug reports, and closure documents.
-      Conducted exploratory, functional, non-functional, and regression testing.
-    </p>
-    <div class="tags">
-      <span class="tag">Trello</span>
-      <span class="tag">Sheets</span>
-      <span class="tag">Docs</span>
-    </div>
-    <div class="project-actions">
-      <a class="icon-btn" href="https://drive.google.com/drive/folders/1xtSHwngQZ9V7ByDyE0y1j7iCxUFY9O4s?usp=sharing" target="_blank"><i class='bx bx-file'></i> Docs</a>
-      <a class="icon-btn" href="https://trello.com/invite/b/68f4b35b68eecbe14be00363/ATTI4395d42487a57b6e725ccc4dc81c05fe33882AAE/bug-tracker-bug-mart" target="_blank"><i class='bx bxl-trello'></i> Board</a>
-    </div>
-  </div>
-</article>
 
+  <div class="projects-grid">
 
-        <!-- Project 2 -->
-        <article class="project-card neon-outline">
-          <div class="project-media">
-            <img src="img/default_project.jpg" alt="Website Design">
-          </div>
-          <div class="project-body">
-            <div class="project-title">
-              <h3>Coming Soon</h3>
-              <div class="muted">2025</div>
-            </div>
-            <p class="muted" style="margin-top:8px">A new creative project is on the way. Stay tuned for updates!</p>
-            <div class="tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">Responsive</span>
-            </div>
-            <div class="project-actions">
-              <a class="icon-btn" href="#" target="_blank"><i class='bx bx-link'></i> Demo</a>
-              <a class="icon-btn" href="#" target="_blank"><i class='bx bxl-github'></i> Repo</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 3 -->
-        <article class="project-card neon-outline">
-          <div class="project-media">
-            <img src="img/default_project.jpg" alt="Shaft Support">
-          </div>
-          <div class="project-body">
-            <div class="project-title">
-              <h3>Coming Soon</h3>
-              <div class="muted">2025</div>
-            </div>
-            <p class="muted" style="margin-top:8px">A new creative project is on the way. Stay tuned for updates!</p>
-            <div class="tags">
-              <span class="tag">AutoCAD</span>
-              <span class="tag">Engineering</span>
-            </div>
-            <div class="project-actions">
-              <a class="icon-btn" href="#" target="_blank"><i class='bx bx-download'></i> Assets</a>
-              <a class="icon-btn" href="#" target="_blank"><i class='bx bxl-github'></i> Repo</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 4 -->
-        <article class="project-card neon-outline">
-          <div class="project-media">
-            <img src="img/default_project.jpg" alt="Terminal Hacker">
-          </div>
-          <div class="project-body">
-            <div class="project-title">
-              <h3>Coming Soon</h3>
-              <div class="muted">2025</div>
-            </div>
-            <p class="muted" style="margin-top:8px">A new creative project is on the way. Stay tuned for updates!</p>
-            <div class="tags">
-              <span class="tag">Unity</span>
-              <span class="tag">C#</span>
-            </div>
-            <div class="project-actions">
-              <a class="icon-btn" href="#" target="_blank"><i class='bx bx-link'></i> Play</a>
-              <a class="icon-btn" href="#" target="_blank"><i class='bx bxl-github'></i> Repo</a>
-            </div>
-          </div>
-        </article>
-
+    <!-- Project 1: BuggyMart -->
+    <article class="project-card neon-outline">
+      <div class="project-media">
+        <img src="img/bugmart.png" alt="BuggyMart QA Project">
       </div>
-    </section>
+      <div class="project-body">
+        <div class="project-title" style="margin-bottom: 25px;">
+          <h3>Manual Testing</h3>
+          <div class="muted">Oct 2025</div>
+        </div>
+         <p class="muted" style="margin-top:8px">A hands-on QA project using documentation tools to perform functional, regression, and exploratory testing on a  web app.</p>
+        <div class="tags">
+          <span class="tag">Trello</span>
+          <span class="tag">Google Sheets</span>
+          <span class="tag">Google Docs</span>
+        </div>
 
+        <div class="project-actions">
+          <a class="icon-btn overview-btn"><i class='bx bx-file'></i> Overview</a>
+          <a class="icon-btn skills-btn"><i class='bx bx-code-alt'></i> Skills</a>
+          <a class="icon-btn" href="https://drive.google.com/drive/folders/1xtSHwngQZ9V7ByDyE0y1j7iCxUFY9O4s?usp=sharing" target="_blank">
+              <i class='bx bx-cloud'></i> Drive
+            </a>
+          <a class="icon-btn" href="https://trello.com/invite/b/68f4b35b68eecbe14be00363/ATTI4395d42487a57b6e725ccc4dc81c05fe33882AAE/bug-tracker-bug-mart" target="_blank"><i class='bx bxl-trello'></i> Board</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project-card neon-outline">
+      <div class="project-media">
+        <img src="img/default_project.jpg" alt="Website Design">
+      </div>
+      <div class="project-body">
+        <div class="project-title">
+          <h3>Portfolio Website</h3>
+          <div class="muted">2025</div>
+        </div>
+        <p class="muted" style="margin-top:8px">A responsive portfolio site showcasing my QA, web, and automation work.</p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Responsive</span>
+        </div>
+        <div class="project-actions">
+          <a class="icon-btn" href="#" target="_blank"><i class='bx bx-link'></i> Demo</a>
+          <a class="icon-btn" href="#" target="_blank"><i class='bx bxl-github'></i> Repo</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="project-card neon-outline">
+      <div class="project-media">
+        <img src="img/default_project.jpg" alt="Engineering Design">
+      </div>
+      <div class="project-body">
+        <div class="project-title">
+          <h3>TrashTech</h3>
+          <div class="muted">2024</div>
+        </div>
+        <p class="muted" style="margin-top:8px">Automated segregation system with volume & toxicity alert for PUP CEA.</p>
+        <div class="tags">
+          <span class="tag">IoT</span>
+          <span class="tag">ESP32</span>
+          <span class="tag">ML</span>
+        </div>
+        <div class="project-actions">
+          <a class="icon-btn" href="#" target="_blank"><i class='bx bx-file'></i> Docs</a>
+          <a class="icon-btn" href="#" target="_blank"><i class='bx bxl-github'></i> Repo</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 4 -->
+    <article class="project-card neon-outline">
+      <div class="project-media">
+        <img src="img/default_project.jpg" alt="Automation Dashboard">
+      </div>
+      <div class="project-body">
+        <div class="project-title">
+          <h3>Automation Dashboard</h3>
+          <div class="muted">2024</div>
+        </div>
+        <p class="muted" style="margin-top:8px">A workflow automation dashboard created using GoHighLevel and API integration.</p>
+        <div class="tags">
+          <span class="tag">Automation</span>
+          <span class="tag">GHL</span>
+          <span class="tag">Webflow</span>
+        </div>
+        <div class="project-actions">
+          <a class="icon-btn" href="#" target="_blank"><i class='bx bx-link'></i> Demo</a>
+          <a class="icon-btn" href="#" target="_blank"><i class='bx bxl-github'></i> Repo</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Popups (fixed, global) -->
+<div class="local-popup" id="bugmart-overview">
+  <div class="local-popup-content">
+    <span class="close-btn">&times;</span>
+    <h3>BuggyMart QA Testing Overview</h3>
+    <ul class="popup-details">
+      <li><strong>Project:</strong> Practical QA Manual Testing (Bug Mart)</li>
+      <li><strong>Type:</strong> Manual QA Training Project</li>
+      <li><strong>Goal:</strong> Practice real-world QA processes on an intentionally buggy e-commerce site.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="local-popup" id="bugmart-skills">
+  <div class="local-popup-content">
+    <span class="close-btn">&times;</span>
+    <h3>BuggyMart Project Skills</h3>
+    <ul class="popup-details">
+      <li><strong>Testing Types:</strong> Functional, Regression, Exploratory, UI</li>
+      <li><strong>Docs:</strong> Test Cases, Bug Reports, RTM, Test Closure Reports</li>
+      <li><strong>Tools:</strong> Trello, Google Sheets, Google Docs</li>
+      <li><strong>Soft Skills:</strong> Attention to Detail, Analytical Thinking, Collaboration</li>
+    </ul>
+  </div>
+</div>
 
 <!-- SKILLS -->
 <section id="skills" class="reveal">
   <div class="section-head">
     <h2>Skills</h2>
-    <p class="muted">Technologies & strengths</p>
+    <p class="muted">Technologies & Strengths</p>
   </div>
+
   <div class="skills">
     <!-- Quality Assurance -->
     <span class="chip">Manual Testing</span>
@@ -279,68 +280,29 @@
   </div>
 </section>
 
-<style>
-  .chip {
-    display: inline-block;
-    background: rgba(255,255,255,0.05);
-    padding: 8px 14px;
-    border-radius: 12px;
-    margin: 4px;
-    font-size: 0.95rem;
-    color: inherit;
-    transition: transform 0.2s ease, background 0.2s ease;
-    cursor: default;
-  }
-
-  .chip:hover {
-    transform: scale(1.08); /* slightly bigger */
-    background: rgba(139, 92, 246, 0.1); /* subtle accent glow */
-  }
-</style>
-
-
-
 <!-- CONTACT -->
 <section id="contact" class="reveal">
   <div class="section-head">
-    <h2>Contact</h2>  
+    <h2>Contact</h2>
   </div>
-
   <div class="contact-card redesigned-contact">
     <div class="contact-intro">
       <h3>Get in Touch</h3>
       <p>Whether you’re looking for a QA professional or just want to say hi — I’d love to hear from you.</p>
     </div>
-
     <div class="contact-links">
-      <a class="contact-btn" href="mailto:kingsleypulan54@gmail.com">
-        <i class='bx bxs-envelope'></i> Gmail
-      </a>
-
-      <a class="contact-btn" href="https://www.linkedin.com/in/nathaniel-kingsley-pulan-349322298/" target="_blank">
-        <i class='bx bxl-linkedin'></i> LinkedIn
-      </a>
-
-      <a class="contact-btn" href="https://www.facebook.com/nathanielkingsley.veluzpulan" target="_blank">
-        <i class='bx bxl-facebook'></i> Facebook
-      </a>
-
-      <a class="contact-btn" href="https://www.instagram.com/kingsleyyy_vp/" target="_blank">
-        <i class='bx bxl-instagram'></i> Instagram
-      </a>
+      <a class="contact-btn" href="mailto:kingsleypulan54@gmail.com"><i class='bx bxs-envelope'></i> Gmail</a>
+      <a class="contact-btn" href="https://www.linkedin.com/in/nathaniel-kingsley-pulan-349322298/" target="_blank"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+      <a class="contact-btn" href="https://www.facebook.com/nathanielkingsley.veluzpulan" target="_blank"><i class='bx bxl-facebook'></i> Facebook</a>
+      <a class="contact-btn" href="https://www.instagram.com/kingsleyyy_vp/" target="_blank"><i class='bx bxl-instagram'></i> Instagram</a>
     </div>
   </div>
 </section>
 
-</section>
+<footer style="margin-top:24px;padding:20px;text-align:center;color:var(--muted);font-size:13px">
+  © Nathaniel Pulan • Software Quality Assurance Tester
+</footer>
 
-
-
-
-
-    <footer style="margin-top:24px;padding:20px;text-align:center;color:var(--muted);font-size:13px">© Nathaniel Pulan • Software Quality Assurance Tester</footer>
-
-  </div>
-
+</div>
 </body>
 </html>
